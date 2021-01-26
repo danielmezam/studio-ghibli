@@ -49,7 +49,6 @@ export default {
   },
   mounted() {
     this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
-    console.log(this.film);
   }
 };
 </script>

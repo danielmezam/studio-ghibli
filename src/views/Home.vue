@@ -59,7 +59,6 @@ export default {
           )
           .then(resp => {
             this.cards = resp.data;
-            console.log(resp.data);
           })
           .catch(err => {
             console.log(err);
@@ -73,7 +72,6 @@ export default {
           )
           .then(resp => {
             this.cards = resp.data;
-            console.log(resp.data);
           })
           .catch(err => {
             console.log(err);
@@ -84,7 +82,6 @@ export default {
         .get("https://ghibliapi.herokuapp.com/films")
         .then(resp => {
           this.cards = resp.data;
-          console.log(resp.data);
         })
         .catch(err => {
           console.log(err);
@@ -93,7 +90,6 @@ export default {
   },
   methods: {
     searchInfo(payload) {
-      console.log(payload);
       if (payload[1] == "" || payload[1] == null) {
         sessionStorage.setItem("lastSearch", payload[1]);
         sessionStorage.setItem("lastCategory", payload[0]);
@@ -124,7 +120,6 @@ export default {
             } else {
               this.error = true;
             }
-            console.log(resp.data);
           })
           .catch(err => {
             console.log(err);

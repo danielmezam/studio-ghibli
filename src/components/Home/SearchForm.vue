@@ -41,7 +41,6 @@ export default {
       ) {
         this.errorForm = false;
         this.$emit("formInfo", [this.lastCategory, this.lastSearch]);
-        console.log(this.lastCategory);
       } else {
         this.errorForm = true;
       }
