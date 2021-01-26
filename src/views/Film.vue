@@ -53,10 +53,9 @@ export default {
       .get(`https://ghibliapi.herokuapp.com/films?id=${id}`)
       .then(async resp => {
         this.filmInfo = resp.data[0];
-
         await axios
           .get(
-            `http://www.omdbapi.com/?t=${this.filmInfo.title}&apikey=741cc2cf`
+            `https://www.omdbapi.com/?t=${this.filmInfo.title}&apikey=741cc2cf`
           )
           .then(resp => {
             const image = {
