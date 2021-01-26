@@ -53,7 +53,6 @@ export default {
       .get(`https://ghibliapi.herokuapp.com/films?id=${id}`)
       .then(async resp => {
         this.filmInfo = resp.data[0];
-        console.log(this.filmInfo);
 
         await axios
           .get(
