@@ -201,6 +201,7 @@ export default {
 @media screen and (max-width: 600px) {
   .card {
     width: 100%;
+    height: 400px;
   }
 }
 
