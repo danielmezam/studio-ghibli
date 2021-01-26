@@ -23,6 +23,12 @@ body {
   padding: 0;
   margin: 0;
 }
+input[type="text"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

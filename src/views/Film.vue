@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 .card {
-  width: 70%;
+  width: 40%;
   margin: auto;
   border-radius: 16px;
   margin-top: 25px;
@@ -123,7 +123,14 @@ export default {
 
 @media screen and (max-width: 600px) {
   .card {
-    width: 100%;
+    width: 90%;
+  }
+
+  .poster {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
   }
 }
 
